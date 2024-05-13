@@ -1,0 +1,152 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 10px;
+    background-color: darkblue;
+}
+
+/* Styling for MB text */
+.mb-scan-text {
+    color: blue; /* Set text color to blue */
+}
+
+/* Styling for scan text */
+.scan-text {
+    color: green; /* Set text color to green */
+    margin-left: 5px; /* Add left margin to separate from MB */
+}
+
+/* Styling for navbar toggler icon */
+.navbar-toggler {
+    border: none; /* Remove border from the toggler button */
+    outline: none; /* Remove outline on focus */
+    background: black; /* Make button background transparent */
+    padding: 0; /* Reset padding */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-color: white; /* Set background color of the strip line to black */
+    width: 30px; /* Adjust width of the strip line icon */
+    height: 3px; /* Adjust height of the strip line icon */
+}
+
+
+
+.left-div {
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.hover-div {
+    padding: 0px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1); /* Apply box shadow */
+}
+
+
+.column-div {
+    background-color: lightgray;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.small-div {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling for small-inner-div */
+.small-inner-div {
+    border: 1px solid #ccc;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    align-items: center;
+    height: auto; /* Allow height to adjust based on content */
+    overflow: hidden;
+    position: relative;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.small-inner-div h5,
+.small-inner-div p {
+    margin: 0;
+    padding: 0px; /* Add padding to h5 and p for spacing */
+}
+
+/* Styling for buttons container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center-align button container */
+    width: 100%;
+    padding: 0px 0; /* Add vertical padding for button container */
+}
+
+/* Styling for individual buttons */
+.button-container p {
+    flex-grow: 1;
+    margin: 0 2px;
+    padding: 4px; /* Adjusted padding for smaller buttons */
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    overflow: hidden; /* Hide overflow of button content */
+    white-space: nowrap; /* Prevent button text from wrapping */
+    text-overflow: ellipsis; /* Show ellipsis (...) for long button text */
+}
+
+.button-container p:hover {
+    background-color: green;
+    color: white;
+}
+/* Styling for "01" */
+.small-inner-div .small-heading {
+    font-size: smaller; /* Make font size smaller */
+}
+
+/* Styling for "TSRT1425" */
+.small-inner-div .subtitle {
+    color: blue; /* Change text color to blue */
+}
+.small-inner-div .stop-heading {
+    font-size: larger; /* Increase font size for "Stop?" */
+}
+/* Styling for timeDisplay6 */
+#timeDisplay1 {
+    background-color: rgb(13, 212, 32);
+    padding: 10px; /* Optional: Add padding for better visibility */
+}
+#timeDisplay2 {
+    background-color: rgb(13, 212, 32);
+    padding: 10px; /* Optional: Add padding for better visibility */
+}
+#timeDisplay3 {
+    background-color: rgb(13, 212, 32);
+    padding: 10px; /* Optional: Add padding for better visibility */
+}
+#timeDisplay4 {
+    background-color: rgb(13, 212, 32);
+    padding: 10px; /* Optional: Add padding for better visibility */
+}
+#timeDisplay5 {
+    background-color: rgb(13, 212, 32);
+    padding: 10px; /* Optional: Add padding for better visibility */
+}
+#timeDisplay6 {
+    background-color: rgb(13, 212, 32);
+    padding: 10px; /* Optional: Add padding for better visibility */
+}
+
+
+

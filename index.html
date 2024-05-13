@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Columns and Rows</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <!-- Display "MB" and "scan" without space -->
+            <a class="navbar-brand" href="#">
+                <span class="mb-scan-text">MBscan</span>
+            </a>
+            <!-- Navbar Toggler Icon with padding -->
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                  <h5 class="text-white h4">Collapsed content</h5>
+                  <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+              </div>
+        </div>
+    </nav>
+    
+    
+        <div class="row">
+            <div class="col-3">
+                <div class="left-div">
+                    <!-- Content for left-div -->
+                    <h2>Spifftest</h2>
+                     
+                    <h5></h5><i class="bi bi-house-door"></i> HOME</h5>
+                    <h5></h><i class="bi bi-person"></i>Create/Edit User</h5>
+                    <h5><i class="bi bi-arrow-right"></i>LogOut</h5>
+                    <p>Testright</p>
+                    <img src="path_to_your_image.jpg" alt="Image Testright" style="width: 100%; height: auto;">
+                </div>
+            </div>
+            <div class="col-9 hover-div">
+                <!-- hover-div contains column-div and small-divs -->
+                <div class="row">
+                    <div class="col-3 column-div">
+                        <h5>Device ID Connected</h5>
+                        <select class="form-control">
+                            <option>MBS00007</option>
+                        </select>
+                        <h5>Tem:</h5>
+                        <h5 style="color: blue;">37.5 C</h5>
+                        <h5>White</h5>
+                        <h5>Start</h5>
+                        <h5>Stop</h5>
+                    </div>
+                            <div class="col-9">
+                                <!-- Display small-div items horizontally -->
+                                <div class="small-div d-flex flex-wrap">
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">01</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div class="button-container">
+                                            <p class="button-1">Take White</p>
+                                            <p class="button-2" style="background-color: rgb(11, 17, 184);">Start</p>
+                                        </div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">02</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div id="timeDisplay1"></div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">01</h5>
+                                        <h5 class="stop-heading">Stop?</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div class="button-container">
+                                            <p class="button-1">Yes</p>
+                                            <p class="button-2"style="background-color: rgb(11, 17, 184);">No</p>
+                                        </div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">04</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div id="timeDisplay2"></div>
+                                    </div>
+                                </div>
+                                <div class="small-div d-flex flex-wrap">
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">05</h5>
+                                        <h5 class="small-heading">Enter Sample Name</h5>
+                                        <div class="button-container">
+                                            <p class="button-1">Take White</p>
+                                            <p class="button-2" style="background-color: rgb(11, 17, 184);">Start</p>
+                                        </div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">05</h5>
+                                        <h5 class="small-heading">Enter Sample Name</h5>
+                                        <div class="button-container">
+                                            <p class="button-1">Take White</p>
+                                            <p class="button-2" style="background-color: rgb(11, 17, 184);">Start</p>
+                                        </div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">03</h5>
+                                        <h5 class="subtitle">White</h5>
+                                        <div class="button-container">
+                                            <p class="button-1">Yes</p>
+                                            <p class="button-2" style="background-color: rgb(11, 17, 184);">No</p>
+                                        </div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5>04</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div id="timeDisplay3"></div>   
+                                    </div>
+                                </div>
+                                <div class="small-div d-flex flex-wrap">
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">01</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div class="button-container">
+                                            <p class="button-1">Take White</p>
+                                            <p class="button-2" style="background-color: rgb(11, 17, 184);">Start</p>
+                                        </div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">02</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div id="timeDisplay4"></div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">03</h5>
+                                        <h5 class="stop-heading">Stop?</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div class="button-container">
+                                            <p class="button-1">Yes</p>
+                                            <p class="button-2" style="background-color: rgb(11, 17, 184);">No</p>
+                                        </div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">04</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div id="timeDisplay5"></div>
+                                    </div>
+                                </div>
+                                <div class="small-div d-flex flex-wrap">
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">01</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div class="button-container">
+                                            <p class="button-1">Take White</p>
+                                            <p class="button-2" style="background-color: rgb(11, 17, 184);">Start</p>
+                                        </div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">01</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div class="button-container">
+                                            <p class="button-1">Take White</p>
+                                            <p class="button-2" style="background-color: rgb(11, 17, 184);">Start</p>
+                                        </div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">04</h5>
+                                        <h5 class="stop-heading">Stop?</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div class="button-container">
+                                            <p class="button-1">Yes</p>
+                                            <p class="button-2" style="background-color: rgb(11, 17, 184);">No</p>
+                                        </div>
+                                    </div>
+                                    <div class="small-inner-div col-3">
+                                        <h5 class="small-heading">04</h5>
+                                        <h5 class="subtitle">TSRT1425</h5>
+                                        <div id="timeDisplay6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
